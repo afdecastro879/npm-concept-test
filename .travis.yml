@@ -1,0 +1,9 @@
+deploy:
+  provider: npm
+  email: af.decastro879@gmail.com
+  api_key:
+    secure: hJMNc4qM03wiXDrta02VVC5aFXBRyNxpgSlrMwEnV4tGq3jxVW78gph5gQW8wSkKj5wrrwHrZlMTWI113q3upb4IVaGQXlOUDfxSha3Z8l9YHe2b65abqhDf2riftpuR8/N6zpj3FHlmRGGOX8RjytcxQITOo3gnBaG/ypdoUU86uhjX3pM1mixU9xRtQl+wvLFBj53wNiirkf8QbriVtunJuC/oskfkwTSA2fgnq+ntz9gIWhCL3CSKpPGYLadjE/FIRFs6HhFj0k3JaCfzN8SyAieC/Yu+K477BxuK5ZZbVOm7knJQNVX7/g4bn72HZykM04k/hlRKbS6uEPQh/zjTG3my5pDrXKQt9fj7kqa5gzKAm94e+gfIfKyE00zds3j0DnW4HOXY36EBBZ6wVs5EVovR/W72Jd61Ihp8+HBRMu/ld/oezPmDG2hx+uS1fyDZ9L2alZxHgLPs4OzrX2scBjq/EGO0yVAme5Va1nVbgh9wEZ16b0pyAd7lzlgJAPqwaW9RL3GJOqqR0/P91LA5xu5VkwudKkcnsc0xdpSqAon8Bhs1ZOy9rjKvJJXx69QwErK7or4qLsVKORepwfKs8uhHUAQ0QZYomuwGAYYHi3IfB/ZBHT7/EETA7ZwXlpxDv+AWmHaxQYV1QJFmwPZXU1RsqypV3Z8Ln8/+fGw=
+  on:
+    tags: true
+    repo: afdecastro879/npm-concept-test
+    branch: master
