@@ -13,9 +13,6 @@ jobs:
     script:
     - "./bin/ci/build_imgs_solutions.sh"
     - "./bin/ci/build_imgs_push.sh"
-    env:
-      matrix:
-        - TARGET=rfv
-        - TARGET=eng
-        - BRANCH=develop
-        - BRANCH=master
+env:
+    - TARGET=rfv BRANCH=develop
+    - TARGET=eng BRANCH=master
