@@ -11,8 +11,8 @@ script: echo "Scripting"
 jobs:
   include:
   - stage: Robot Tests
-    install: echo "Robot Tests install"
-    script: echo "Robot tests scripts"
+    install: echo "Robot Tests install $TARGET"
+    script: echo "Robot tests scripts $TARGET"
 env:
     - TARGET=rfv BRANCH=develop
     - TARGET=eng BRANCH=master
