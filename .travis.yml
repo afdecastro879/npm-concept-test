@@ -9,11 +9,13 @@ jobs:
     language: go
     services:
     - docker
-    env:
-    - TARGET=rfv BRANCH=develop
-    - TARGET=eng \
-      BRANCH=develop
     install: "./bin/ci/build_imgs_install.sh"
     script:
     - "./bin/ci/build_imgs_solutions.sh"
     - "./bin/ci/build_imgs_push.sh"
+env:
+  matrix:
+    - TARGET=rfv
+    - TARGET=eng
+    - BRANCH=develop
+    - BRANCH=master
