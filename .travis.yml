@@ -1,20 +1,18 @@
 sudo: required
+language: go
 go:
 - 1.9
 node_js:
 - 8
-install: true
-script: true
+services:
+- docker
+install: echo "Installing"
+script: echo "Scripting"
 jobs:
   include:
-  - stage: Build Docker Images
-    language: go
-    services:
-    - docker
-    install: "./bin/ci/build_imgs_install.sh"
-    script:
-    - "./bin/ci/build_imgs_solutions.sh"
-    - "./bin/ci/build_imgs_push.sh"
+  - stage: Robot Tests
+    install: echo "Robot Tests install"
+    script: echo "Robot tests scripts"
 env:
     - TARGET=rfv BRANCH=develop
     - TARGET=eng BRANCH=master
