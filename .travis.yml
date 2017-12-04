@@ -9,7 +9,11 @@ jobs:
     language: go
     services:
     - docker
-    env: "config/env/develop.env"
+    env:
+    - TARGET=rfv
+      BRANCH=develop
+    - TARGET=eng
+      BRANCH=develop
     install: "./bin/ci/build_imgs_install.sh"
     script:
     - "./bin/ci/build_imgs_solutions.sh"
