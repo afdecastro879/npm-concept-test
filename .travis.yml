@@ -10,10 +10,9 @@ jobs:
     services:
     - docker
     env:
-    - TARGET=rfv
-      BRANCH=develop
-    - TARGET=eng
-      BRANCH=develop
+    - TARGET=rfv BRANCH=develop
+    - TARGET=eng \
+    BRANCH=develop
     install: "./bin/ci/build_imgs_install.sh"
     script:
     - "./bin/ci/build_imgs_solutions.sh"
