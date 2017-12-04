@@ -14,5 +14,4 @@ jobs:
     install: echo "Robot Tests install $TARGET"
     script: echo "Robot tests scripts $TARGET"
 env:
-    - TARGET=rfv BRANCH=develop
-    - TARGET=eng BRANCH=master
+    - TARGET=rfv
